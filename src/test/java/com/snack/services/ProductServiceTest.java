@@ -17,7 +17,7 @@ public class ProductServiceTest {
     @BeforeEach
     public void setUp() {
         produtoXBurguer = new Product(50, "x-burguer", 10, "C:\\Users\\dudur\\Pictures\\aula\\test.png");
-        produtoXSalada = new Product(50, "x-salada", 15, "C:\\Users\\dudur\\Pictures\\aula\\test.png");
+        produtoXSalada = new Product(50, "x-salada", 15, "C:\\Users\\dudur\\Pictures\\aula\\test2.jpg");
         productService = new ProductService();
     }
 
@@ -50,7 +50,7 @@ public class ProductServiceTest {
     @Test
     public void salvarUmProdutoComImagemInexistente() {
         // Arrange
-        Product produtoInvalido = new Product(60, "produto-invalido", 20, "C:\\Users\\dudur\\Pictures\\aula\\test.png");
+        Product produtoInvalido = new Product(60, "produto-invalido", 20, "C:\\Users\\dudur\\Pictures\\aula\\ine.png");
 
         // Act
         boolean result = productService.save(produtoInvalido);
